@@ -1,0 +1,242 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Logo and Image */
+#logo{
+    margin: 5px;
+}
+
+#logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    margin: 2px 10px;
+}
+
+/* Navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+/* Navigation Bar: List Styling */
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    padding: 0px 15px;
+    margin: 0px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 300px;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(../Images/bg1.jpg) no-repeat center center/cover;
+    height: 420px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.95;
+    filter: brightness(40%);
+}
+
+#home h1{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+#home p{
+    font-size: 1.2rem;
+    padding: 12px;
+    color: white;
+}
+
+.btn{
+    padding: 6px 15px;
+    border: 2px solid white;
+    background-color: #452020;
+    color: white;
+    cursor: pointer;
+    margin: 20px; 
+    border-radius: 20px;
+}
+
+.btn:hover{
+    color: #452020;
+    background-color: white;
+    border: 2px solid #452020;
+}
+
+/* Utility Classes */
+.h-primary-center{
+    font-size: 2.2rem;
+    padding-top: 12px;
+    text-align: center;
+}
+
+.h-secondary-center{
+    font-size: 1.5rem;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Services Section */
+#services{
+    display: flex;
+    margin: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#services .box{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid brown;
+    border-radius: 20px;
+    padding: 20px 20px;
+    background-color: rgb(250, 245, 245);
+}
+
+#services .box img{
+    height: 200px;
+    width: 300px;
+}
+
+/* Client Section */
+#clients{
+    display: flex;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+#client-section{
+    height: 250px;
+    color: white;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    background: url(../Images/bg2.jpg) no-repeat center center/cover;
+    z-index: -1;
+    filter: brightness(40%);
+    opacity: 0.95;
+}
+
+#clients .client-item{
+    padding: 0px 20px;
+    margin: 10px 25px;
+}
+
+#clients .client-item img{
+    height: 150px;
+    width: 150px;
+}
+
+/* Contact Section */
+#contact{
+    margin-top: 15px;
+    position: relative;
+    height: 360px;
+    color: white;
+}
+
+#contact .h-primary-center2{
+    font-size: 2.2rem;
+    padding-top: 12px;
+    text-align: left;
+    margin-left: 130px;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 360px;
+    width: 100%;
+    background: url(../Images/bg.jpg) no-repeat center right/cover;
+    z-index: -1;
+    filter: brightness(50%);
+    opacity: 0.95;
+}
+
+#contact-box{
+    display: flex;
+    /* justify-content: center; */
+    margin-left: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact-box .form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+#contact-box textarea{
+    width: 30vw;
+    padding: 0.5rem;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: black;
+    color: white;
+}
